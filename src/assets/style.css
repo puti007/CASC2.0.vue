@@ -188,11 +188,11 @@
     height: auto;
 }
 .device-failure-box{
-    background: url(move-1.gif) no-repeat;
+    /* background: url(move-1.gif) no-repeat;
     background-position: left top;
     background-size: 408px 387px;
     width: 408px;
-    height: 387px;
+    height: 387px; */
 }
 .flex-box{
     display: flex;
