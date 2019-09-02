@@ -1,0 +1,384 @@
+.animate-line{
+    position: absolute;
+    border-radius:50px;
+}
+.animate-line-horizontal{
+    height:2px;
+}
+.animate-line-vertical{
+    width:2px;
+}
+.animate-left-right{
+    background: linear-gradient(to right, #12286c , hsl(180, 100%, 58%)) ;/* 标准的语法（必须放在最后） */
+}
+.animate-right-left{
+    background: linear-gradient(to left, #12286c , hsl(180, 100%, 58%)) ;/* 标准的语法（必须放在最后） */
+}
+.animate-top-bottom{
+    background: linear-gradient(to bottom, #12286c  , hsl(180, 100%, 58%)) ;/* 标准的语法（必须放在最后） */
+}
+.animate-bottom-top{
+    background: linear-gradient(to top, #12286c , hsl(180, 100%, 58%)) ;/* 标准的语法（必须放在最后） */
+}
+/*设备故障统计模块动效start*/
+.device-failure-animate .animate-left-right,
+.device-failure-type-animate .animate-left-right{
+    top:-2px;
+    left:-2px;
+    animation:device-failure-move1 4s linear  infinite;
+}
+.device-failure-animate .animate-right-left,
+.device-failure-type-animate .animate-right-left{
+    bottom:-2px;
+    right:306px;
+    animation:device-failure-move2 4s linear  infinite;
+}
+
+.device-failure-animate .animate-top-bottom{
+    top:0px;
+    right:-2px;
+    animation:device-failure-move3 4s linear  infinite;
+    animation-delay:2s;
+}
+.device-failure-animate .animate-bottom-top{
+    bottom:385px;
+    left:-2px;
+    animation:device-failure-move4 4s linear  infinite;
+    animation-delay:2s;
+}
+@keyframes device-failure-move1
+{
+     0% {transform:translate(-82px,0);width:80px;}
+    100% {transform:translate(408px,0);width:80px;}  
+  
+}
+@keyframes device-failure-move2
+{
+    0% {transform:translateX(408px);width:80px;}
+    100% {transform:translateX(-82px);width:80px;}
+}
+@keyframes device-failure-move3
+{
+    0% {transform:translateY(-82px);height:80px;}
+    100% {transform:translateY(385px);height:80px;}
+}
+@keyframes device-failure-move4
+{
+    0% {transform:translateY(465px);height:80px;}
+    100% {transform:translateY(-82px);height:80px;}
+}
+/*设备故障统计模块动效end*/
+
+/*故障类型统计模块动效start*/
+.device-failure-type-animate .animate-top-bottom{
+    top:0px;
+    right:-2px;
+    height:50px;
+    animation:device-failure-type-move3 4s linear infinite;
+    animation-delay:2s;
+}
+.device-failure-type-animate .animate-bottom-top{
+    bottom:505px;
+    left:-2px;
+    height:50px;
+    animation:device-failure-type-move4 4s linear infinite;
+    animation-delay:2s;
+}
+@keyframes device-failure-type-move3
+{
+    0% {transform:translateY(-80px);height:80px;}
+    100% {transform:translateY(501px);height:80px;}
+}
+@keyframes device-failure-type-move4
+{
+    0% {transform:translateY(581px);height:80px;}
+    100% {transform:translateY(-80px);height:80px;}
+}
+/*故障类型统计模块动效end*/
+/*地图模块动效start*/
+.earth-animate .animate-left-right,
+.device-info-animate .animate-left-right{
+    top:-2px;
+    left:0px;
+    animation:earth-move1 4s linear infinite;
+}
+.earth-animate .animate-right-left,
+.device-info-animate .animate-right-left{
+    bottom:-2px;
+    right:934px;
+    animation:earth-move2 4s linear infinite;
+}
+
+.earth-animate .animate-top-bottom{
+    top:0px;
+    right:-2px;
+    animation:earth-move3 4s linear infinite;
+    animation-delay:2s;
+}
+.earth-animate .animate-bottom-top{
+    bottom:658px;
+    left:-2px;
+    animation:earth-move4 4s linear infinite;
+    animation-delay:2s;
+}
+@keyframes earth-move1
+{
+    0% {transform:translateX(-80px);width:80px;}
+    100% {transform:translateX(934px);width:80px;}
+}
+@keyframes earth-move2
+{
+    0% {transform:translateX(1014px);width:80px;}
+    100% {transform:translateX(-80px);width:80px;}
+}
+@keyframes earth-move3
+{
+    0% {transform:translateY(-80px);height:80px;}
+    100% {transform:translateY(656px);height:80px;}
+}
+@keyframes earth-move4
+{
+    0% {transform:translateY(736px);height:80px;}
+    100% {transform:translateY(-80px);height:80px;}
+}
+/*地图模块动效end*/
+/*设备详情列表模块动效start*/
+.device-info-animate .animate-top-bottom{
+    top:0px;
+    right:-2px;
+    animation:device-info-move3 4s linear infinite;
+    animation-delay:2s;
+}
+.device-info-animate .animate-bottom-top{
+    bottom:230px;
+    left:-2px;
+    animation:device-info-move4 4s linear infinite;
+    animation-delay:2s;
+}
+@keyframes device-info-move3
+{
+    0% {transform:translateY(-80px);height:80px;}
+    100% {transform:translateY(230px);height:80px;}
+}
+@keyframes device-info-move4
+{
+    0% {transform:translateY(310px);height:80px;}
+    100% {transform:translateY(-80px);height:80px;}
+}
+/*设备详情列表模块动效end*/
+/* 告警显示模块动效start */
+.alarm-display-animate .animate-left-right,
+.fault-info-record-animate .animate-left-right{
+    top:-2px;
+    left:0px;
+    animation:alarm-display-move1 4s linear infinite;
+}
+.alarm-display-animate .animate-right-left,
+.fault-info-record-animate .animate-right-left{
+    bottom:-2px;
+    right:409px;
+    animation:alarm-display-move2 4s linear infinite;
+}
+
+.alarm-display-animate .animate-top-bottom{
+    top:0px;
+    right:-2px;
+    animation:alarm-display-move3 4s linear infinite;
+    animation-delay:2s;
+}
+.alarm-display-animate .animate-bottom-top{
+    bottom:390px;
+    left:-2px;
+    animation:alarm-display-move4 4s linear infinite;
+    animation-delay:2s;
+}
+@keyframes alarm-display-move1
+{
+    0% {transform:translateX(-80px);width:80px;}
+    100% {transform:translateX(409px);width:80px;}
+}
+@keyframes alarm-display-move2
+{
+    0% {transform:translateX(489px);width:80px;}
+    100% {transform:translateX(-80px);width:80px;}
+}
+@keyframes alarm-display-move3
+{
+    0% {transform:translateY(-80px);height:80px;}
+    100% {transform:translateY(387px);height:80px;}
+}
+@keyframes alarm-display-move4
+{
+    0% {transform:translateY(467px);height:80px;}
+    100% {transform:translateY(-80px);height:80px;}
+}
+/* 告警显示模块动效end */
+/* 故障信息记录模块动效start */
+.fault-info-record-animate .animate-top-bottom{
+    top:0px;
+    right:-2px;
+    animation:fault-info-record-move3 4s linear infinite;
+    animation-delay:2s;
+}
+.fault-info-record-animate .animate-bottom-top{
+    bottom:502px;
+    left:-2px;
+    animation:fault-info-record-move4 4s linear infinite;
+    animation-delay:2s;
+}
+@keyframes fault-info-record-move3
+{
+    0% {transform:translateY(-80px);height:80px;}
+    100% {transform:translateY(498px);height:80px;}
+}
+@keyframes fault-info-record-move4
+{
+    0% {transform:translateY(578px);height:80px;}
+    100% {transform:translateY(-80px);height:80px;}
+}
+/* 故障信息记录模块动效end */
+/*详情页：
+告警信息模块动效start*/
+.detail-alarm-animate .animate-left-right,
+.detail-power-animate .animate-left-right,
+.detail-comprehensiveUse-animate .animate-left-right,
+.detail-error-animate .animate-left-right,
+.detail-wasteHeat-animate .animate-left-right,
+.detail-gas-animate .animate-left-right{
+    top:0px;
+    left:0px;
+    animation:detail-alarm-move1 4s linear infinite;
+}
+.detail-alarm-animate .animate-right-left,
+.detail-power-animate .animate-right-left,
+.detail-comprehensiveUse-animate .animate-right-left,
+.detail-error-animate .animate-right-left,
+.detail-wasteHeat-animate .animate-right-left,
+.detail-gas-animate .animate-right-left
+{
+    bottom:0px;
+    right:330px;
+    animation:detail-alarm-move2 4s linear infinite;
+}
+
+.detail-alarm-animate .animate-top-bottom,
+.detail-error-animate .animate-top-bottom
+{
+    top:0px;
+    right:2px;
+    animation:detail-alarm-move3 4s linear infinite;
+    /* animation-delay: 2s; */
+}
+.detail-alarm-animate .animate-bottom-top,
+.detail-error-animate .animate-bottom-top{
+    bottom:250px;
+    left:0px;
+    animation:detail-alarm-move4 4s linear infinite;
+    /* animation-delay:2s; */
+}
+@keyframes detail-alarm-move1
+{
+    0% {transform:translateX(-50px);width:50px;}
+    100% {transform:translateX(280px);width:50px;}
+}
+@keyframes detail-alarm-move2
+{
+    0% {transform:translateX(300px);width:50px;}
+    100% {transform:translateX(-50px);width:50px;}
+}
+@keyframes detail-alarm-move3
+{
+    0% {transform:translateY(20px);height:50px;}
+    100% {transform:translateY(230px);height:50px;}
+}
+
+@keyframes detail-alarm-move4
+{
+    0% {transform:translateY(332px);height:50px;}
+    100% {transform:translateY(30px);height:50px;}
+}
+/*详情页：告警信息模块动效end*/
+.detail-power-animate .animate-top-bottom,
+.detail-comprehensiveUse-animate .animate-top-bottom,
+.detail-wasteHeat-animate .animate-top-bottom,
+.detail-gas-animate .animate-top-bottom
+{
+    top:0px;
+    right:2px;
+    animation:detail-power-move3 4s linear infinite;
+}
+.detail-save-resources-animate .animate-top-bottom{
+    top:0px;
+    right:0px;
+    animation:detail-power-move3 4s linear infinite;
+}
+.detail-power-animate .animate-bottom-top,
+.detail-comprehensiveUse-animate .animate-bottom-top,
+.detail-wasteHeat-animate .animate-bottom-top,
+.detail-gas-animate .animate-bottom-top,
+.detail-save-resources-animate .animate-bottom-top{
+    bottom:250px;
+    left:0px;
+    animation:detail-power-move4 4s linear infinite;
+    /* animation-delay: 2s; */
+
+}
+.detail-save-resources-animate .animate-bottom-top{
+    bottom:250px;
+    right:1px;
+    animation:detail-power-move4 4s linear infinite;
+}
+@keyframes detail-power-move3
+{
+    0% {transform:translateY(30px);height:50px;}
+    100% {transform:translateY(240px);height:50px;}
+}
+@keyframes detail-power-move4
+{
+    0% {transform:translateY(300px);height:20px;}
+    100% {transform:translateY(0px);height:50px;}
+}
+.detail-main-animate .animate-left-right,
+.detail-save-resources-animate .animate-left-right
+{
+    top:0px;
+    left:0px;
+    animation:detail-main-move1 4s linear infinite;
+}
+.detail-main-animate .animate-right-left,
+.detail-save-resources-animate .animate-right-left
+{
+    bottom:0px;
+    right:994px;
+    animation:detail-main-move2 4s linear infinite;
+}
+.detail-main-animate .animate-top-bottom{
+    top:0px;
+    right:-1px;
+    animation:detail-main-move3 4s linear infinite;
+}
+.detail-main-animate .animate-bottom-top{
+    bottom:595px;
+    left:0px;
+    animation:detail-main-move4 4s linear infinite;
+}
+@keyframes detail-main-move1
+{
+    0% {transform:translateX(0px);width:30px;}
+    100% {transform:translateX(820px);width:180px;}
+}
+@keyframes detail-main-move2
+{
+    0% {transform:translateX(1000px);width:100px;}
+    100% {transform:translateX(100px);width:80px;}
+}
+@keyframes detail-main-move3
+{
+    0% {transform:translateY(0px);height:50px;}
+    100% {transform:translateY(500px);height:100px;}
+}
+@keyframes detail-main-move4
+{
+    0% {transform:translateY(610px);height:100px;}
+    100% {transform:translateY(100px);height:100px;}
+}

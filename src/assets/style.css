@@ -1,0 +1,284 @@
+.relative-animate{
+    position: relative;
+    overflow: hidden;
+}
+.bg-purple{
+    background-color: rgba(39, 58, 93, 0.34);
+}
+.bg-main{
+    width:100%;
+    height:100%;
+    background:#000429 url(bg-main.png) no-repeat;
+    background-size: cover;
+    color:#fff;
+    padding:0 72px 65px 74px;
+    box-sizing: border-box;
+}
+.bg-main .el-container{
+    background: url(earth.png) no-repeat;
+    background-position: top center;
+    background-size: contain;
+}
+.bg-main .header{
+    text-align: center;
+    height:109px!important;
+    line-height: 109px;
+    font-size: 44px;
+    font-weight: bold;
+}
+.bg-main .el-main{
+    padding:0;
+}
+.bg-main .el-main .flex-box{
+    justify-content: space-around;
+}
+.bg-main .el-col .el-col{
+    position: relative;
+    margin-bottom: 8px;
+    padding:5px;
+    border: 1px solid #273a5d;
+    border-radius: 5px 0 0 5px;
+    box-sizing: border-box;
+}
+.bg-main .el-col .el-col:before{
+    display: block;
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid #00BCD4;
+    border-left: 2px solid #00BCD4;
+    border-bottom: 2px solid transparent;
+    border-right: 2px solid transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 4px 0 0 0;
+}
+.bg-main .el-col .el-col:after{
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 12px solid #273a5d;
+    border-right: 12px solid #273a5d;
+    border-bottom: 12px solid transparent;
+    border-left: 12px solid transparent;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.triangle-top-right1{
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 12px solid #000429;
+    border-right: 12px solid #000429;
+    border-bottom: 12px solid transparent;
+    border-left: 12px solid transparent;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    z-index: 2;
+}
+.bg-main .el-col .el-col .grid-content{
+    position: relative;
+    box-sizing: border-box;
+    padding:10px 5px 0;
+}
+.bg-main .el-col .el-col .grid-content:before{
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 13px solid #000429;
+    border-right: 13px solid #000429;
+    border-bottom: 13px solid transparent;
+    border-left: 13px solid transparent;
+    position: absolute;
+    top: 0px;
+    right: 0;
+}
+.bg-main .el-col .el-col .grid-content:after{
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-right: 12px solid #000429;
+    border-bottom: 12px solid #000429;
+    border-left: 12px solid transparent;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+}
+.triangle-top-right2{
+    display: block;
+    content: '';
+    width: 28px;
+    height: 3px;
+    background-color: #00BCD4;
+    position: absolute;
+    top: 9px;
+    right: -3px;
+    transform: rotate(44deg);
+    -webkit-transform: rotate(44deg);
+}
+.triangle-bottom-right1{
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 16px solid transparent;
+    border-right: 16px solid #000429;
+    border-bottom: 16px solid #000429;
+    border-left: 16px solid transparent;
+    position: absolute;
+    bottom: -6px;
+    right: -1px;
+    z-index: 2
+}
+.triangle-bottom-right2{
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-right: 15px solid #273a5d;
+    border-bottom: 15px solid #273a5d;
+    border-left: 15px solid transparent;
+    position: absolute;
+    bottom: -6px;
+    right: -6px;
+    z-index: 1;
+}
+.triangle-bottom-right3{
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-right: 12px solid #00BCD4;
+    border-bottom: 12px solid #00BCD4;
+    border-left: 12px solid transparent;
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    z-index: 2;
+}
+
+ .module .title{
+    display: inline-block;
+    height: 51px;
+    line-height: 51px;
+    padding:0 36px;
+    margin: 0 0 0 14px;
+    background: url(bg-title.png) no-repeat;
+    background-size: 100% 100%;
+    font-size: 24px;
+}
+.module-earth .title{
+    color:#00ffff;
+}
+.move-gif{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: auto;
+}
+.device-failure-box{
+    background: url(move-1.gif) no-repeat;
+    background-position: left top;
+    background-size: 408px 387px;
+    width: 408px;
+    height: 387px;
+}
+.flex-box{
+    display: flex;
+    justify-content: space-between;
+}
+.flex-item{
+    height: 907px;
+    box-sizing: border-box;
+}
+.module {
+    text-align: left;
+   box-sizing: border-box;
+}
+.index .module {
+    position: relative;
+    background-color:rgba(59, 122, 255, 0.2);
+    border:2px solid #12286c;
+    padding:23px 0 0 0;
+}
+.flex-item .relative-animate{
+    margin-bottom: 12px;
+    box-sizing: border-box;
+}
+.flex-item .relative-animate:last-child{
+    margin-bottom:0;
+}
+.module-device-failure{
+    /* background-image: url(move-1.gif); */
+    background-repeat: no-repeat;
+    /* background-size: 451px 453px; */
+    /* background-position: -32px -36px; */
+    background-position: left center;
+}
+
+#device-failure{
+    width:400px;
+    height:320px;
+}
+#device-failure-type{
+    width:408px;
+    height:430px;
+}
+#earth{
+    width:934px;
+    height:589px;
+    margin-bottom:11px;
+}
+#device-info{
+    width:934px;
+    height:233px;
+    padding-top:12px;
+    padding-left: 0;
+}
+#device-info .title{
+    width:112px;
+    height: 32px;
+    line-height: 32px;
+    padding:0;
+    font-size: 16px;
+}
+
+#alarm-display{
+    width:409px;
+    height:390px;
+    margin-bottom: 13px;
+    padding:14px 0 0 0;
+}
+#alarm-display .title{
+    margin-left: 14px;
+}
+#fault-info-record{
+    width:409px;
+    height:429px;
+}
+.save-resource{
+    position: absolute;
+    display: flex;
+    width: 360px;
+    bottom:20px;
+    justify-content: center;
+}
+.save-resource .item{
+    width:120px;
+    text-align: center;
+}
+.save-resource p{
+    margin:0;
+    font-size: 14px;
+}
